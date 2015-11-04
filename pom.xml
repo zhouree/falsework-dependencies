@@ -9,75 +9,6 @@
 
 	<build>
 		<defaultGoal>install</defaultGoal>
-		<pluginManagement>
-			<plugins>
-				<plugin>
-					<groupId>org.apache.maven.plugins</groupId>
-					<artifactId>maven-compiler-plugin</artifactId>
-					<version>3.1</version>
-					<configuration>
-						<source>${java.version}</source>
-						<target>${java.version}</target>
-					</configuration>
-				</plugin>
-				<plugin>
-					<groupId>org.apache.maven.plugins</groupId>
-					<artifactId>maven-surefire-plugin</artifactId>
-					<version>2.15</version>
-					<configuration>
-						<skip>true</skip>
-					</configuration>
-				</plugin>
-				<plugin>
-					<groupId>org.apache.maven.plugins</groupId>
-					<artifactId>maven-resources-plugin</artifactId>
-					<version>2.6</version>
-					<configuration>
-						<locales>${project.build.locales}</locales>
-						<outputEncoding>${project.build.sourceEncoding}</outputEncoding>
-					</configuration>
-				</plugin>
-				<plugin>
-					<groupId>org.apache.maven.plugins</groupId>
-					<artifactId>maven-javadoc-plugin</artifactId>
-					<configuration>
-						<minmemory>128m</minmemory>
-						<maxmemory>512m</maxmemory>
-					</configuration>
-					<version>2.9.1</version>
-				</plugin>
-				<plugin>
-					<groupId>org.apache.maven.plugins</groupId>
-					<artifactId>maven-jar-plugin</artifactId>
-					<version>2.4</version>
-				</plugin>
-				<plugin>
-					<groupId>org.apache.maven.plugins</groupId>
-					<artifactId>maven-war-plugin</artifactId>
-					<version>2.4</version>
-				</plugin>
-				<plugin>
-					<groupId>org.apache.maven.plugins</groupId>
-					<artifactId>maven-antrun-plugin</artifactId>
-					<version>1.7</version>
-				</plugin>
-				<plugin>
-					<groupId>org.apache.maven.plugins</groupId>
-					<artifactId>maven-dependency-plugin</artifactId>
-					<version>2.4</version>
-				</plugin>
-				<plugin>
-					<groupId>org.eclipse.jetty</groupId>
-					<artifactId>jetty-maven-plugin</artifactId>
-					<version>${jetty.version}</version>
-				</plugin>
-				<plugin>
-					<groupId>org.springframework.boot</groupId>
-					<artifactId>spring-boot-maven-plugin</artifactId>
-					<version>${spring-boot.version}</version>
-				</plugin>
-			</plugins>
-		</pluginManagement>
 	</build>
 
 	<dependencyManagement>
@@ -756,13 +687,6 @@
 	</dependencyManagement>
 
 	<properties>
-		<!-- base setting -->
-		<java.version>1.8</java.version>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-		<project.build.locales>zh_CN</project.build.locales>
-		<!-- maven versions -->
-		
 		<!-- lib versions -->
 		<activemq.version>5.10.0</activemq.version>
 		<aspectj.version>1.7.4</aspectj.version>
@@ -826,7 +750,7 @@
 		<struts2.version>2.3.16.1</struts2.version>
 		<shiro.version>1.2.2</shiro.version>
 		<spring.version>4.2.2.RELEASE</spring.version>
-		<spring-boot.version>1.1.4.RELEASE</spring-boot.version>
+		<spring-boot.version>1.2.7.RELEASE</spring-boot.version>
 		<spring.data.jpa.version>1.6.1.RELEASE</spring.data.jpa.version>
 		<spring.data.commons.version>1.9.0.RELEASE</spring.data.commons.version>
 		<spring.webflow.version>2.4.0.RELEASE</spring.webflow.version>
