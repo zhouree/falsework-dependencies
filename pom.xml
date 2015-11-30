@@ -2,13 +2,13 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
 	<modelVersion>4.0.0</modelVersion>
-	
+
 	<parent>
 		<groupId>io.spring.platform</groupId>
 		<artifactId>platform-bom</artifactId>
 		<version>2.0.0.RELEASE</version>
 	</parent>
-	
+
 	<groupId>net.falsework</groupId>
 	<artifactId>falsework-dependencies</artifactId>
 	<packaging>pom</packaging>
@@ -23,7 +23,7 @@
 
 	<dependencyManagement>
 		<dependencies>
-			<!-- hibernate java8-->
+			<!-- hibernate java8 -->
 			<dependency>
 				<groupId>org.hibernate</groupId>
 				<artifactId>hibernate-java8</artifactId>
@@ -49,12 +49,6 @@
 				<groupId>com.esotericsoftware</groupId>
 				<artifactId>kryo</artifactId>
 				<version>${kryo.version}</version>
-			</dependency>
-			<!-- google -->
-			<dependency>
-				<groupId>com.google.javascript</groupId>
-				<artifactId>closure-compiler</artifactId>
-				<version>${google.compiler.version}</version>
 			</dependency>
 			<!-- apache -->
 			<dependency>
@@ -122,7 +116,7 @@
 
 	<properties>
 		<!-- lib versions -->
-		<google.compiler.version>v20140814</google.compiler.version>
+		<guava.version>18.0</guava.version>
 		<hibernate.version>5.0.3.Final</hibernate.version>
 		<jstl.version>1.2</jstl.version>
 		<javamail.version>1.4.1</javamail.version>
@@ -133,6 +127,8 @@
 		<kryo.version>3.0.3</kryo.version>
 		<mybatis.version>3.3.0</mybatis.version>
 		<mybatis.spring.version>1.2.3</mybatis.spring.version>
+		<rabbit-amqp-client.version>3.5.6</rabbit-amqp-client.version>
+		<rabbit-http-client.version>1.0.0.RELEASE</rabbit-http-client.version>
 		<shiro.version>1.2.2</shiro.version>
 		<servlet.version>3.1.0</servlet.version>
 		<xmemcached.version>2.0.0</xmemcached.version>
