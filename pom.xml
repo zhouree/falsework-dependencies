@@ -6,7 +6,7 @@
 	<parent>
 		<groupId>io.spring.platform</groupId>
 		<artifactId>platform-bom</artifactId>
-		<version>2.0.1.RELEASE</version>
+		<version>2.0.3.RELEASE</version>
 	</parent>
 
 	<groupId>net.falsework</groupId>
@@ -40,16 +40,6 @@
 				<artifactId>mybatis-spring</artifactId>
 				<version>${mybatis.spring.version}</version>
 			</dependency>
-			<dependency>
-				<groupId>com.googlecode.xmemcached</groupId>
-				<artifactId>xmemcached</artifactId>
-				<version>${xmemcached.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>com.esotericsoftware</groupId>
-				<artifactId>kryo</artifactId>
-				<version>${kryo.version}</version>
-			</dependency>
 			<!-- apache -->
 			<dependency>
 				<groupId>org.apache.shiro</groupId>
@@ -72,55 +62,18 @@
 				<version>${thrift.version}</version>
 			</dependency>
 
-			<!-- other -->
-			<dependency>
-				<groupId>org.jasypt</groupId>
-				<artifactId>jasypt</artifactId>
-				<version>${jasypt.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.jasypt</groupId>
-				<artifactId>jasypt-springsecurity3</artifactId>
-				<version>${jasypt.version}</version>
-			</dependency>
-			<!-- javax -->
-			<dependency>
-				<groupId>javax.servlet</groupId>
-				<artifactId>javax.servlet-api</artifactId>
-				<version>${servlet.version}</version>
-				<scope>provided</scope>
-			</dependency>
-			<dependency>
-				<groupId>javax.servlet</groupId>
-				<artifactId>jstl</artifactId>
-				<version>${jstl.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>javax.servlet.jsp</groupId>
-				<artifactId>jsp-api</artifactId>
-				<version>${jsp.version}</version>
-				<scope>provided</scope>
-			</dependency>
 		</dependencies>
 	</dependencyManagement>
 
 	<properties>
 		<!-- lib versions -->
-		<curator.version>2.9.1</curator.version>
-		<guava.version>18.0</guava.version>
 		<hibernate.version>5.0.3.Final</hibernate.version>
-		<jstl.version>1.2</jstl.version>
-		<jasypt.version>1.9.0</jasypt.version>
-		<jsp.version>2.2</jsp.version>
-		<jta.version>1.1</jta.version>
-		<kryo.version>3.0.3</kryo.version>
+		<jedis.version>2.8.1</jedis.version>
 		<mybatis.version>3.3.0</mybatis.version>
 		<mybatis.spring.version>1.2.3</mybatis.spring.version>
 		<rabbit-amqp-client.version>3.5.6</rabbit-amqp-client.version>
 		<rabbit-http-client.version>1.0.0.RELEASE</rabbit-http-client.version>
 		<shiro.version>1.2.2</shiro.version>
-		<servlet.version>3.1.0</servlet.version>
 		<thrift.version>0.9.3</thrift.version>
-		<xmemcached.version>2.0.0</xmemcached.version>
 	</properties>
 </project>
